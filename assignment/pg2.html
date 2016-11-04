@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+<br/>
+<a href="index-1.php"><img src="signup.png" height="140" width="320"></a>
+
+    <form name="formRegister" method="post" action="ConfirmR.php" class="login" onSubmit="return submitForms()" "return checkPw(this)">
+
+        <h1>New Customer Registration Panel</h1>
+        <br/>
+      
+      <input type="text" size="25" name="Name" class="login-input" placeholder="Enter Your First Name" onkeypress="acceptw()">
+       
+       <input type="text" size="25" name="Surname" class="login-input" placeholder="Enter Your Sur Name"onkeypress="acceptw()">
+        
+       <input type="text" size="20" class="login-input" placeholder="Choose an User Name" name="Username">
+             
+        <input type="password" maxlength="10" class="login-input" placeholder="Enter a password of length 10" name="pw1" size="20">
+
+        <input type="password" maxlength="10" class="login-input" placeholder="Repeat your entered  password" name="pw2" onchange="acceptY()" size="20">
+              
+        <input type="text" size="30" class="login-input" placeholder="Enter an Email Address" name="Email">
+                
+           <input type="textare" cols="30" class="login-input" placeholder="Enter a Billing Address" rows="3" name="Address">
+              <input type="text" size="10" class="login-input" placeholder="Enter your Contact No." maxlength="8" name="Tel" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+       
+        <p><input type="submit" value="Make me Registered" class="login-submit">
+            <input type="reset" name="reset" class="login-submit" value="Reset All Fields" onClick="return confirm('Are you sure you want to clear the current information?');"></p>
+         
+      </form>
+	  <p align="center"><a href="main.html">Home Page</a></p>
+ 
+</center>
+
+</body>
+</html>>
